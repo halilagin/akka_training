@@ -26,3 +26,21 @@ sbt service/run
 sbt web/run
 ```
 # akka_training
+
+
+
+# Open ports
+
+add port definitions in /etc/pf.conf like the statement below.
+
+```
+pass in inet proto tcp from 192.168.0.0/24 to any port 8000
+```
+
+
+and run the command below
+
+```
+sudp pfctl -f /etc/pf.conf
+```
+
