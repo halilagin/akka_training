@@ -44,3 +44,5 @@ bin/
 *.class
 *.log
 *.swp
+**/*.jar
+**/*.class
