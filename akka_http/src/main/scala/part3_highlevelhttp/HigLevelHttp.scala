@@ -96,6 +96,7 @@ object  HigLevelHttp extends App{
 
   val binding: Future[Http.ServerBinding] = Http().bindAndHandle(routes, "0.0.0.0", 8080)
 
+
   println("binding!")
 //  val bindingFuture = Http().newServerAt("localhost", 8080).bind(routes)
 //    .map(_.addToCoordinatedShutdown(hardTerminationDeadline = 10.seconds))
